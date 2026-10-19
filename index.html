@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Curso de Programação</title>
 </head>
 
@@ -81,6 +82,47 @@
                     </tr>
                 </tbody>
             </table>
+         </section>
+         <!-- Seção de Formulario -->
+         <section>
+
+            <h2>Garanta sua Vaga</h2>
+            <form>
+
+                <label for="nome">Nome Completo:</label> <br>
+                <input type="text" id="nome" placeholder="Informe seu nome completo" required> <br> <br>
+
+                <label for="Email">Email Profissional: </label> <br>
+                <input type="email" id="Email" placeholder="Informe seu Email" required> <br> <br>
+
+                <label for="Senha">Digite sua senha</label> <br>
+                <input type="password" id="Senha" placeholder="***************" required> <br> <br>
+
+                <label for="nivel">Nivel de Experiencia</label> <br>
+                <select name="nivel" id="nivel" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="iniciante">Iniciante</option>
+                    <option value="intermediario">Intermediario</option>
+                    <option value="avancado">Avançado</option>
+                </select>
+
+                <p>Como prefere estudar?</p>
+                <input type="radio" id="presencial" value="presencial" name="modalidade">
+                <label for="presencial">Presencial</label><br>
+                <input type="radio" id="remoto" value="remoto" name="modalidade">
+                <label for="remoto">Remoto</label><br>
+                <input type="radio" id="hibrido" value="hibrido" name="modalidade"
+                checked>
+                <label for="hibrido">Hibrido</label><br>
+
+
+                <label for="expectativa"> Quais são suas expectativa?</label> <br>
+                <textarea  name="expectativa" id="expectativa" rows="6" cols="40"></textarea> <br> <br>
+
+                <button>Enviar Incrição</button>
+
+            </form>
+            
          </section>
 
 
